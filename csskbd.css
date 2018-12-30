@@ -1,0 +1,36 @@
+/* CSS KBD by Onbloging */
+kbd{
+position:relative;
+color:#fff;
+border:1px solid rgba(0,0,0,0.1);
+border-radius:3px;
+box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+color:#333;
+font-size:16px;
+line-height:1.4;
+font-family:consolas;
+margin:0 .1em;
+padding:.1em .6em;
+font-weight:500
+-webkit-user-select:text;
+-khtml-user-select:text;
+-moz-user-select:text;
+-ms-user-select:text;user-select:text;
+}
+kbd:before{
+  position:absolute;
+  content:&#39;Double click to select&#39;;
+  display:table;
+  bottom:23px;
+  left:0;
+  background:#f97599;
+  color:#fff;
+  padding:6px;
+  border-radius:3px;
+  font-size:75%;
+  line-height:1;
+  opacity:0;
+  visibility:hidden;
+  z-index:2;
+  transition:all .3s;}
+kbd:hover:before{opacity:1;visibility:visible}
